@@ -1,6 +1,7 @@
 package com.hatcher;
 
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
@@ -32,6 +33,8 @@ class Demo03Test {
         System.out.println(mockRandom.nextInt());
         // 看mockRandom是否执行了nextInt方法,并且执行了一次(次数可省略)
         Mockito.verify(mockRandom, Mockito.times(1)).nextInt();
+        // 断言，nextInt的值一定是100，如果不是100就报错
+        Assertions.assertEquals(mockRandom.nextInt(), 100);
     }
 
 
