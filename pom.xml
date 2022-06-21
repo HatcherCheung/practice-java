@@ -6,7 +6,11 @@
 
   <groupId>com.hatcher</groupId>
   <artifactId>No302.JAVA_practice</artifactId>
+  <packaging>pom</packaging>
   <version>1.0</version>
+  <modules>
+    <module>No01_MockIto</module>
+  </modules>
 
   <name>No302.JAVA_practice</name>
 
